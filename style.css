@@ -9,7 +9,10 @@ body {
 #btnNew {
     position: relative;
     top: 50px;
-    left: 50px;
+}
+
+#btnNew > i{
+    color: rgb(44, 170, 44);    
 }
 
 span {
