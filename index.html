@@ -15,15 +15,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-blue">
+<body>
+  <div id="particles-js"></div>
     <nav class="navbar navbar-light bg-light container-fluid d-flex justify-content-between">
         <h1 class="navbar-brand"> NDM <p class="d-none d-sm-inline">Construction </p>- Gestionnaire</h1>
         <button class="btn" title="se déconnecter"><i class="fas fa-sign-out-alt"></i></button>
     </nav>
     
-    <div class="container-fluid mt-1">
+    <div class="container-fluid mt-1 mb-5">
         <button class="btn" title="Nouvel Utilisateur" data-toggle="modal" id="btnNew" data-target="#exampleModalCenter"><i class="fas fa-user-plus lg" id="iconplus"></i></button>
-        <table class="table table-bordered table-hover table-striped table-dark"
+        <table class="table table-bordered table-hover table-striped table-dark "
         id="table"
         data-sortable="true"
         data-toggle="table"
@@ -127,6 +128,8 @@
 </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+        <script src="js/scriptPart.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
