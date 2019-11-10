@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>NDM V1.0</title>
+    <title>NDM V1.0 Fiche Client</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -23,9 +23,12 @@
 
     <div class="container-fluid">
         <div class="mt-5 col-md-6  bg-dark p-2 border border-light border-bottom-0">
-            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalEditClient"><i class="fas fa-user-edit"></i></button>
-            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalParamClient"><i class="fas fa-cog"></i></i></button>
-            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalSupprClient"><i class="fas fa-trash"></i></button>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalEditClient"><i
+                    class="fas fa-user-edit"></i></button>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalParamClient"><i
+                    class="fas fa-cog"></i></i></button>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalSupprClient"><i
+                    class="fas fa-trash"></i></button>
         </div>
         <div class="col-md-6 bg-dark p-2 border border-light border-top-0" id="infoCiv">
             <div class="nom_prenom">
@@ -46,7 +49,8 @@
             </div>
         </div>
         <div>
-            <button class="btn btn-light float-right mt-1" id="tacheplus" data-toggle="modal" data-target="#modalAjoutTrav"><i class="fas fa-plus-circle"></i></button>
+            <button class="btn btn-light float-right mt-1" id="tacheplus" data-toggle="modal"
+                data-target="#modalAjoutTrav"><i class="fas fa-plus-circle"></i></button>
         </div>
         <div class="mt-5 mb-0">
             <p class="text-center travaux border border-light mb-0 align-items-center">Travaux en cours</p>
@@ -54,32 +58,61 @@
         <div class="table-responsive">
             <table class="table table-bordered table-striped table-dark table-hover " data-toggle="table">
                 <thead>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
                 </thead>
                 <tbody>
                     <tr>
                         <td>rénovation façade</td>
                         <td>début: 06/11/2020</td>
-                        <td>zone devis</td>
-                        <td>zone factures</td>
-                        <td>fin éstimée</td>
-                        <td>Annotations</td>
-                        <td>icone</td>
+                        <td>
+                            <select name="" id="" class="custom-select w-50">
+                                <option value="Devis">Devis</option>
+                                <option value="Devis">Devis 1</option>
+                                <option value="Devis">Devis 2</option>
+                                <option value="Devis">Tous les devis</option>
+                            </select>
+                            <button class="btn btn-light"><i class="fas fa-download" ></i></button>
+                        </td>
+                        <td>
+                            <select name="" id="" class="custom-select w-50">
+                                <option value="Factures">Factures</option>
+                                <option value="Factures">Factures 1</option>
+                                <option value="Factures">Factures 2</option>
+                                <option value="Factures">Toutes les Factures</option>
+                            </select>
+                            <button class="btn btn-light"><i class="fas fa-download" ></i></button>
+                        </td>
+                        <td><button class="btn btn-light">Détail <i class="fas fa-info-circle"></i></button></td>
+                        <td><button class="btn btn-light"><i class="fas fa-edit"></i></button></td>
                     </tr>
                     <tr>
                         <td>rénovation façade</td>
                         <td>début: 06/11/2020</td>
-                        <td>zone devis</td>
-                        <td>zone factures</td>
-                        <td>fin éstimée</td>
-                        <td>Annotations</td>
-                        <td>icone</td>
+                        <td>
+                                <select name="" id="" class="custom-select w-50">
+                                    <option value="Devis">Devis</option>
+                                    <option value="Devis">Devis 1</option>
+                                    <option value="Devis">Devis 2</option>
+                                    <option value="Devis">Tous les devis</option>
+                                </select>
+                                <button class="btn btn-light"><i class="fas fa-download" ></i></button>
+                            </td>
+                        <td>
+                                <select name="" id="" class="custom-select w-50">
+                                    <option value="Factures">Factures</option>
+                                    <option value="Factures">Factures 1</option>
+                                    <option value="Factures">Factures 2</option>
+                                    <option value="Factures">Toutes les Factures</option>
+                                </select>
+                                <button class="btn btn-light"><i class="fas fa-download" ></i></button>
+                            </td>
+                        <td><button class="btn btn-light">Détail <i class="fas fa-info-circle"></i></button></td>
+                        <td><button class="btn btn-light"><i class="fas fa-edit"></i></button></td>
                     </tr>
                 </tbody>
             </table>
@@ -91,40 +124,72 @@
         <div class="table-responsive">
             <table class="table table-bordered table-striped table-dark table-hover " data-toggle="table">
                 <thead>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
                 </thead>
                 <tbody>
                     <tr>
                         <td>rénovation façade</td>
                         <td>début: 06/11/2020</td>
-                        <td>zone devis</td>
-                        <td>zone factures</td>
-                        <td>fin éstimée</td>
-                        <td>Annotations</td>
-                        <td>icone</td>
+                        <td>
+                                <select name="" id="" class="custom-select w-50">
+                                    <option value="Devis">Devis</option>
+                                    <option value="Devis">Devis 1</option>
+                                    <option value="Devis">Devis 2</option>
+                                    <option value="Devis">Tous les devis</option>
+                                </select>
+                                <button class="btn btn-light"><i class="fas fa-download" ></i></button>
+                            </td>
+                        <td>
+                                <select name="" id="" class="custom-select w-50">
+                                    <option value="Factures">Factures</option>
+                                    <option value="Factures">Factures 1</option>
+                                    <option value="Factures">Factures 2</option>
+                                    <option value="Factures">Toutes les Factures</option>
+                                </select>
+                                <button class="btn btn-light"><i class="fas fa-download" ></i></button>
+                            </td>
+                        <td>fin 13/12/2020</td>
+                        <td><button class="btn btn-light">Détail <i class="fas fa-info-circle"></i></button></td>
+                        <td><button class="btn btn-light"><i class="fas fa-edit"></i></button></td>
                     </tr>
                     <tr>
                         <td>rénovation façade</td>
                         <td>début: 06/11/2020</td>
-                        <td>zone devis</td>
-                        <td>zone factures</td>
+                        <td>
+                                <select name="" id="" class="custom-select w-50">
+                                    <option value="Devis">Devis</option>
+                                    <option value="Devis">Devis 1</option>
+                                    <option value="Devis">Devis 2</option>
+                                    <option value="Devis">Tous les devis</option>
+                                </select>
+                                <button class="btn btn-light"><i class="fas fa-download" ></i></button>
+                            </td>
+                        <td>
+                                <select name="" id="" class="custom-select w-50">
+                                    <option value="Factures">Factures</option>
+                                    <option value="Factures">Factures 1</option>
+                                    <option value="Factures">Factures 2</option>
+                                    <option value="Factures">Toutes les Factures</option>
+                                </select>
+                                <button class="btn btn-light"><i class="fas fa-download" ></i></button>
+                            </td>
                         <td>fin: 13/12/2020</td>
-                        <td>Annotations</td>
-                        <td>icone</td>
+                        <td><button class="btn btn-light">Détail <i class="fas fa-info-circle"></i></button></td>
+                        <td><button class="btn btn-light"><i class="fas fa-edit"></i></button></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
     <!-- modal edition client -->
-    <div class="modal fade" id="modalEditClient" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="modalEditClient" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content bg-dark">
                 <div class="modal-header bg-light">
@@ -144,8 +209,8 @@
         </div>
     </div>
     <!-- modal parametres client -->
-    <div class="modal fade" id="modalParamClient" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="modalParamClient" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content bg-dark">
                 <div class="modal-header bg-light">
@@ -165,8 +230,8 @@
         </div>
     </div>
     <!-- Suppression Client ! -->
-    <div class="modal fade" id="modalSupprClient" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="modalSupprClient" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content bg-dark">
                 <div class="modal-header bg-danger">
@@ -186,8 +251,8 @@
         </div>
     </div>
     <!-- Ajout nouveau travaux  -->
-    <div class="modal fade" id="modalAjoutTrav" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="modalAjoutTrav" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content bg-dark">
                 <div class="modal-header bg-light">
@@ -200,8 +265,8 @@
                     <!-- contenu ici -->
                 </div>
                 <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
-                        <button type="submit" form='form1' class="btn btn-success">Sauvegarder</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                    <button type="submit" form='form1' class="btn btn-success">Sauvegarder</button>
                 </div>
             </div>
         </div>
