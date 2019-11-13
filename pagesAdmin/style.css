@@ -59,7 +59,7 @@ th {
     width: 100% !important;
     height: 100% !important;
     background-color: rgb(104, 104, 104);
-    background-image: url("img/bg.jpg");
+    background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
